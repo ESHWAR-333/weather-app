@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style rel="stylesheet" href="style.css"></style>
+    <title>Weather App</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="weather-logo.png" height="45px"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="input">
+              <button class="btn btn-outline-dark" type="submit" id="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="contianer">
+        <main class="p-5">
+            <h1 class="my-3 text-center"><span id="cityName"></span> Weather</h1>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary " style="height: 280px;">
+                  <div class="card-header py-3 text-bg-primary border-primary bg-primary">
+                    <h4 class="my-0 fw-normal " style="color: white;">Temperature Info</h4>
+                  </div>
+                  <div class="card-body ">
+                    <h1 class="card-title pricing-card-title"><span id="temp1"></span><small class="text-body-secondary fw-light">°C</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>Temperature     is <span id="temp"></span></li>
+                      <li>Min Temperature is <span id="min_temp"></span></li>
+                      <li>Max Temperature is <span id="max_temp"></span></li>
+                      <li></li>
+                    </ul>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary" style="height: 280px;">
+                  <div class="card-header py-3 text-bg-primary border-primary bg-primary">
+                    <h4 class="my-0 fw-normal" style="color: white;">Humidity Info</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title"><span id="humidity1"></span><small class="text-body-secondary fw-light">%</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Cloud_pct is <span id="cloud_pct"></span></li>
+                        <li>Feels_like is <span id="feels_like"></span></li>
+                        <li>Humidity is <span id="humidity"></span></li>
+                    </ul>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary" style="height: 280px;">
+                  <div class="card-header py-3 text-bg-primary border-primary bg-primary">
+                    <h4 class="my-0 fw-normal " style="color: white;">Wind Info</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title"><span id="wind_speed1"></span><small class="text-body-secondary fw-light">km/h</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <!-- <li>sunrise is <span id="sunrise"></span></li> -->
+                        <li>Sunset is <span id="sunset"></span></li>
+                        <li>Wind_degrees is <span id="wind_degrees"></span></li>
+                        <li>Wind_speed is <span id="wind_speed"></span></li>
+                    </ul>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+      </div>
+
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
