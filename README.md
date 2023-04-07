@@ -1,6 +1,9 @@
 
 # Weather App
 
+![My Image](overview.jpeg)
+
+
 This is a simple weather app created using HTML, CSS, JavaScript, and the RapidAPI Weather API. The app allows you to search for the current weather conditions in any city by entering its name into the search bar.
 
 # How to use
